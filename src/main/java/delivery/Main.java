@@ -5,6 +5,9 @@ public class Main {
         Cashier cashier = Cashier.getInstance();
 
         Cook cook = new Cook();
+        Cookable secureCook = new SecurityProxy(cook);
+
+        cashier = Cashier.getInstance();
         cook.register(cashier);
 
         cook.cookBurger();

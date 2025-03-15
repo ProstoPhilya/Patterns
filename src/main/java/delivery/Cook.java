@@ -3,13 +3,17 @@ package delivery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cook {
+interface Cookable {
+    void cookBurger();
+}
+public class Cook implements Cookable {
     private final List<CookObserver> observers = new ArrayList<>();
 
     public void register(Cashier cashier) {
         observers.add(cashier);
     }
 
+    @Override
     public void cookBurger() {
         Burger burger = new Burger.Builder()
                 .addBun()
