@@ -3,7 +3,7 @@ package delivery;
 import delivery.dishes.Cookable;
 
 public class SecurityProxy implements Cookable {
-    private Cookable cook;
+    private final Cookable cook;
 
     public SecurityProxy(Cookable cook) {
         this.cook = cook;
