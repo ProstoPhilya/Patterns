@@ -1,11 +1,10 @@
 package delivery;
 
+import delivery.dishes.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
-interface Cookable {
-    void cookBurger();
-}
 public class Cook implements Cookable {
     private final List<CookObserver> observers = new ArrayList<>();
 
@@ -20,7 +19,7 @@ public class Cook implements Cookable {
                 .addPatty()
                 .addCheese()
                 .build();
-        System.out.println("Cook finished cooking the burger!");
+        System.out.println("\nПовар закончил готовить бургер!");
         notifyObservers(burger);
     }
 

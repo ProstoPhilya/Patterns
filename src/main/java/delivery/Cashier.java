@@ -1,5 +1,7 @@
 package delivery;
 
+import delivery.dishes.Burger;
+
 public class Cashier implements CookObserver {
     private static Cashier instance;
 
@@ -13,7 +15,7 @@ public class Cashier implements CookObserver {
     }
 
     public void receiveBurger(Burger burger) {
-        System.out.println("Cashier received: " + burger.toString());
+        System.out.println("Кассир получил: " + burger.toString());
     }
 
     @Override

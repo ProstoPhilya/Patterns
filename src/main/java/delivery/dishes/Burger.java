@@ -1,4 +1,4 @@
-package delivery;
+package delivery.dishes;
 
 public class Burger {
     private final String ingredients;
@@ -9,7 +9,7 @@ public class Burger {
 
     @Override
     public String toString() {
-        return "Burger with " + ingredients;
+        return "Бургер с " + ingredients;
     }
 
     public static class Builder {
@@ -19,7 +19,7 @@ public class Burger {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Bun";
+            ingredients += "Булочкой";
             return this;
         }
 
@@ -27,7 +27,7 @@ public class Burger {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Patty";
+            ingredients += "Котлетой";
             return this;
         }
 
@@ -35,7 +35,7 @@ public class Burger {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Cheese";
+            ingredients += "Сыром";
             return this;
         }
 
@@ -43,7 +43,7 @@ public class Burger {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Tomato";
+            ingredients += "Помидором";
             return this;
         }
 
@@ -51,7 +51,7 @@ public class Burger {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Onion";
+            ingredients += "Луком";
             return this;
         }
 

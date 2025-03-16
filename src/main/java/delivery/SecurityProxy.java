@@ -1,5 +1,7 @@
 package delivery;
 
+import delivery.dishes.Cookable;
+
 public class SecurityProxy implements Cookable {
     private Cookable cook;
 
