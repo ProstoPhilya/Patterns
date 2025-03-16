@@ -8,6 +8,5 @@ public class ClassicBurgerDecorator extends BurgerDecorator {
     @Override
     public void cookBurger() {
         super.cookBurger();
-        System.out.println("Добавляем кетчуп и горчицу к классическому бургеру.");
     }
 }

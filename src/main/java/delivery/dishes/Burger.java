@@ -47,11 +47,11 @@ public class Burger {
             return this;
         }
 
-        public Builder addOnion() {
+        public Builder addJalapeno() {
             if (!ingredients.isEmpty()) {
                 ingredients += ", ";
             }
-            ingredients += "Луком";
+            ingredients += "Халапеньо";
             return this;
         }
 

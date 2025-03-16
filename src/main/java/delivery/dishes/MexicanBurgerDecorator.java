@@ -7,7 +7,7 @@ public class MexicanBurgerDecorator extends BurgerDecorator {
 
     @Override
     public void cookBurger() {
-        super.cookBurger();
         System.out.println("Добавляем халапеньо и сальсу в мексиканский бургер.");
+        super.cookBurger();
     }
 }

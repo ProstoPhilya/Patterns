@@ -17,7 +17,6 @@ public class Main {
 
         cook.cookBurger();
 
-
         classicburger.cookBurger();
 
         veggieBurger.cookBurger();

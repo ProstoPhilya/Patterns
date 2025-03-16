@@ -7,7 +7,7 @@ public class VeggieBurgerDecorator extends BurgerDecorator {
 
     @Override
     public void cookBurger() {
+        System.out.println("Заменяем котлету на вегетарианскую котлету в вегетарианском бургере.");
         super.cookBurger();
-        System.out.println("Замените котлету на вегетарианскую котлету в вегетарианском бургере.");
     }
 }

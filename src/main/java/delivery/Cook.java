@@ -19,7 +19,7 @@ public class Cook implements Cookable {
                 .addPatty()
                 .addCheese()
                 .build();
-        System.out.println("\nПовар закончил готовить бургер!");
+        System.out.println("Повар закончил готовить бургер!");
         notifyObservers(burger);
     }
 

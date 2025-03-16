@@ -15,7 +15,7 @@ public class Cashier implements CookObserver {
     }
 
     public void receiveBurger(Burger burger) {
-        System.out.println("Кассир получил: " + burger.toString());
+        System.out.println("Кассир получил: " + burger.toString() + "\n");
     }
 
     @Override
